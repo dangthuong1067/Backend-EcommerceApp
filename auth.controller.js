@@ -43,13 +43,12 @@ exports.signup = (req, res) => {
 
 exports.login = (req, res) => {
   const {
-    // username,
     email,
     password,
   } = req.body;
 
   const user = users.find(
-    item => item.username === username && item.password === password
+    item => item.email === email && item.password === password
   );
 
   if (!user) {
