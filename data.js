@@ -1,13 +1,13 @@
 exports.products = [
   {
     id: 1,
-    firstItem: [
-      { capacity: "4GB", name: 'Samsung Galaxy A14 4G', image: "https://cdn.tgdd.vn/Products/Images/42/271721/samsung-galaxy-a14-5g-thumb-nau-600x600.jpg", price: 3490000, reducedPrice: 4490000, categoryId: 2, tags: ['sale', 'popular'] }
-    ],
-    secondItem: [
-      { capacity: "6GB", name: 'Samsung Galaxy A14 4G', image: "https://cdn.tgdd.vn/Products/Images/42/271721/samsung-galaxy-a14-5g-thumb-nau-600x600.jpg", price: 4990000, reducedPrice: 3990000, categoryId: 2, tags: ['sale', 'popular'] }
-    ],
-
+    name: 'Samsung Galaxy A14 4G',
+    categoryId: 2,
+    tags: ['sale', 'popular'],
+    items: [
+      { capacity: "4GB", image: "https://cdn.tgdd.vn/Products/Images/42/271721/samsung-galaxy-a14-5g-thumb-nau-600x600.jpg", price: 3490000, reducedPrice: 4490000, },
+      { capacity: "6GB", image: "https://cdn.tgdd.vn/Products/Images/42/271721/samsung-galaxy-a14-5g-thumb-nau-600x600.jpg", price: 4990000, reducedPrice: 3990000, }
+    ]
   },
   // { id: 2, name: 'Samsung Galaxy A15', image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-a15-xanh-01.png", price: 4990000, reducedPrice: 3990000, capacity: "4GB", categoryId: 2 },
   // { id: 3, name: 'Samsung Galaxy S21 FE 5G', image: "https://cdn.tgdd.vn/Products/Images/42/267211/Samsung-Galaxy-S21-FE-vang-1-2-600x600.jpg", price: 12990000, reducedPrice: 9490000, capacity: "4GB", categoryId: 2 },
