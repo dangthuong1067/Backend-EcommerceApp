@@ -25,7 +25,12 @@ app.post('/auth/forget-password')
 app.post('/auth/signup', authController.signup);
 app.post('/auth/login', authController.login);
 
+
+
 app.use(authenticateJWT);
+
+// app.get('/home/banners', homeController.getBanners);
+
 
 app.get('/users/me', userController.getMe);
 
