@@ -2,10 +2,10 @@ exports.products = [
   {
     id: 1,
     firstItem: [
-      { capacity: "4GB", name: 'Samsung Galaxy A14 4G', image: "https://cdn.tgdd.vn/Products/Images/42/271721/samsung-galaxy-a14-5g-thumb-nau-600x600.jpg", price: 3490000, reducedPrice: 4490000, categoryId: 2 }
+      { capacity: "4GB", name: 'Samsung Galaxy A14 4G', image: "https://cdn.tgdd.vn/Products/Images/42/271721/samsung-galaxy-a14-5g-thumb-nau-600x600.jpg", price: 3490000, reducedPrice: 4490000, categoryId: 2, tags: ['sale', 'popular'] }
     ],
     secondItem: [
-      { capacity: "6GB", name: 'Samsung Galaxy A14 4G', image: "https://cdn.tgdd.vn/Products/Images/42/271721/samsung-galaxy-a14-5g-thumb-nau-600x600.jpg", price: 4990000, reducedPrice: 3990000, categoryId: 2 }
+      { capacity: "6GB", name: 'Samsung Galaxy A14 4G', image: "https://cdn.tgdd.vn/Products/Images/42/271721/samsung-galaxy-a14-5g-thumb-nau-600x600.jpg", price: 4990000, reducedPrice: 3990000, categoryId: 2, tags: ['sale', 'popular'] }
     ],
 
   },
