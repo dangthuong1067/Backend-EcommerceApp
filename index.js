@@ -9,6 +9,7 @@ const app = express();
 const productController = require('./product.controller');
 const authController = require('./auth.controller');
 const userController = require('./user.controller');
+const homeController = require('./home.controller');
 const authenticateJWT = require('./middlewares/authenticateJWT');
 
 const port = 3100;
@@ -29,10 +30,16 @@ app.post('/auth/login', authController.login);
 
 app.use(authenticateJWT);
 
-// app.get('/home/banners', homeController.getBanners);
+app.get('/home/banners', homeController.getBanners);
+
+app.get('/home/categories', homeController.getCategories);
 
 
 app.get('/users/me', userController.getMe);
+
+app
+  .route('/home/products')
+  .get(homeController.getProducts)
 
 app
   .route('/products')
