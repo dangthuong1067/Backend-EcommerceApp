@@ -31,15 +31,12 @@ app.post('/auth/login', authController.login);
 app.use(authenticateJWT);
 
 app.get('/home/banners', homeController.getBanners);
-
 app.get('/home/categories', homeController.getCategories);
-
-
-app.get('/users/me', userController.getMe);
-
 app
   .route('/home/products')
   .get(homeController.getProducts)
+
+app.get('/users/me', userController.getMe);
 
 app
   .route('/products')
