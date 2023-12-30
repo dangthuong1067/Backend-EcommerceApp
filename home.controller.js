@@ -2,58 +2,41 @@ const { products, banners, categories } = require('./data');
 
 
 exports.getProducts = (req, res) => {
-  const { tag } = req.query;
-  console.log("tag", tag);
+  const { tag, categoryId } = req.query;
   let saleProducts = [];
   let popularProducts = [];
+  let productByCategory = [];
 
   if (tag) {
     products.forEach(item => {
-      let tags = item.tags
+      let tags = item.tags;
       if (tags?.length > 0) {
         tags.forEach(element => {
           if (tag === 'sale' && element === tag) {
-            saleProducts.push(item)
+            saleProducts.push(item);
           } else if (element === 'popular' && element === tag) {
-            popularProducts.push(item)
+            popularProducts.push(item);
           }
         });
       }
     });
   }
 
-  console.log("saleProducts", saleProducts);
+  if (categoryId) {
+    productByCategory = products.filter(item => item.categoryId === Number(categoryId));
+  }
+
   res
     .status(200)
     .json({
       status: 'success',
       data: {
-        products: tag === 'sale' ? saleProducts : tag === 'popular' ? popularProducts : products
+        products: tag === 'sale' ? saleProducts : tag === 'popular' ? popularProducts : categoryId ? productByCategory : products,
+        productByCategory
       }
     });
-
-
-  // const {
-  //   name,
-  // } = req.query;
-  // let filterProducts = products;
-
-  // if (name) {
-  //   filterProducts = filterProducts.filter(
-  //     item => item.name.toLowerCase().includes(name.toLowerCase())
-  //   );
-  // }
-
-  // res
-  // .status(200)
-  // .json({
-  //   status: 'success',
-  //   data: {
-  //     //products: filterProducts
-  //     products
-  //   }
-  // });
 };
+
 
 exports.getBanners = (req, res) => {
   res
