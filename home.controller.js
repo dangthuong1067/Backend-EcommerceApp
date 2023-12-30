@@ -2,16 +2,17 @@ const { products, banners, categories } = require('./data');
 
 
 exports.getProducts = (req, res) => {
-  const { tag } = req.params;
+  const { tag } = req.query;
+  console.log("tag", tag);
   let saleProducts = [];
   let popularProducts = [];
 
   if (tag) {
     products.forEach(item => {
       let tags = item.tags
-      if (tags.length > 0) {
+      if (tags?.length > 0) {
         tags.forEach(element => {
-          if (element === 'sale' && element === tag) {
+          if (tag === 'sale' && element === tag) {
             saleProducts.push(item)
           } else if (element === 'popular' && element === tag) {
             popularProducts.push(item)
