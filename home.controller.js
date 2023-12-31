@@ -6,9 +6,11 @@ exports.getProducts = (req, res) => {
   let filterProducts = []
 
   if (tag) {
-    filterProducts = products.filter(item => {
-      return item?.tags?.includes(tag);
-    })
+    // filterProducts = products.filter(item => {
+    //   return item?.tags?.includes(tag);
+    // })
+
+    filterProducts = products.filter(item => item.tags?.includes(tag))
   }
 
   if (categoryId) {

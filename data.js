@@ -3,9 +3,9 @@ exports.products = [
     id: 1,
     name: 'Samsung Galaxy A14 4G',
     categoryId: 2,
-    tags: ['sale', 'popular'],
+    tags: ['sale',],
     items: [
-      { capacity: "4GB", image: "https://cdn.tgdd.vn/Products/Images/42/271721/samsung-galaxy-a14-5g-thumb-nau-600x600.jpg", price: 3490000, reducedPrice: 4490000, },
+      { capacity: "4GB", image: "https://cdn.tgdd.vn/Products/Images/42/271721/samsung-galaxy-a14-5g-thumb-nau-600x600.jpg", price: 4490000, reducedPrice: 3490000, },
       { capacity: "6GB", image: "https://cdn.tgdd.vn/Products/Images/42/271721/samsung-galaxy-a14-5g-thumb-nau-600x600.jpg", price: 4990000, reducedPrice: 3990000, }
     ]
   },
@@ -13,6 +13,7 @@ exports.products = [
     id: 2,
     name: 'Samsung Galaxy A15',
     categoryId: 2,
+    tags: ['popular'],
     items: [
       { capacity: "128GB", image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-a15-xanh-01.png", price: 4490000, reducedPrice: 3490000, },
       { capacity: "256GB", image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-a15-xanh-01.png", price: 5590000, reducedPrice: 4990000, }
@@ -727,31 +728,31 @@ exports.banners = [
 
 exports.categories = [
   {
-    id: 1,
+    id: 2,
     categoryName: 'SAMSUNG',
     image: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/samsung-logo-transparent.png",
     background: '#bac5c1',
   },
   {
-    id: 2,
+    id: 3,
     categoryName: 'IPHONE',
-    image: "https://cdn.tgdd.vn/Brand/1/logo-iphone-220x48.png",
+    image: "https://w7.pngwing.com/pngs/664/673/png-transparent-apple-logo-iphone-computer-apple-logo-company-heart-logo.png",
     background: '#fdf6ec',
   },
   {
-    id: 3,
+    id: 4,
     categoryName: 'VIVO',
     image: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/vivo-logo.png",
     background: '#fde8e5',
   },
   {
-    id: 4,
+    id: 5,
     categoryName: 'XIAOMI',
     image: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/07/18/xiaomi-logo.png",
     background: '#f4eaf5',
   },
   {
-    id: 5,
+    id: 6,
     categoryName: 'OPPO',
     image: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(3).png",
     background: '#b0b7bd',
