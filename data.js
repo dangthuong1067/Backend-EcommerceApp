@@ -132,7 +132,7 @@ exports.products = [
     id: 15,
     name: 'Samsung Galaxy A25 5G',
     categoryId: 2,
-    tags: ['sale', 'popular'],
+    tags: ['popular'],
     items: [
 
       { capacity: "128 GB", image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-a25-xanh-vang.png", price: 6590000, reducedPrice: 6090000, },
@@ -143,7 +143,7 @@ exports.products = [
     id: 16,
     name: 'iPhone 11',
     categoryId: 3,
-    tags: ['sale', 'popular'],
+    tags: ['popular'],
     items: [
       { capacity: "64 GB", image: "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/10/18/iphone-11-black-2-up-vertical-us-en-screen-1.png", price: 11790000, reducedPrice: 10790000, },
       { capacity: "128 GB", image: "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/10/18/iphone-11-black-2-up-vertical-us-en-screen-1.png", price: 13390000, reducedPrice: 12290000, },
@@ -154,6 +154,7 @@ exports.products = [
     id: 17,
     name: 'iPhone 12',
     categoryId: 3,
+    tags: ['sale', 'popular'],
     items: [
       { capacity: "64 GB", image: "https://cdn.tgdd.vn/Products/Images/42/228737/iphone-12-den-new-600x600-600x600.jpg", price: 14890000, reducedPrice: 13190000, },
       { capacity: "128 GB", image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-12-128gb_2.png", price: 15590000, reducedPrice: 15000000, },

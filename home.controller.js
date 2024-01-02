@@ -6,15 +6,19 @@ exports.getProducts = (req, res) => {
   let filterProducts = []
 
   if (tag) {
-    // filterProducts = products.filter(item => {
-    //   return item?.tags?.includes(tag);
-    // })
+    filterProducts = products.filter(item => {
+      return item?.tags?.includes(tag);
+    })
 
-    filterProducts = products.filter(item => item.tags?.includes(tag))
+    // filterProducts = products.filter(item => item.tags?.includes(tag))
   }
 
-  if (categoryId) {
+  else if (categoryId && categoryId !== 1) {
     filterProducts = products.filter(item => item.categoryId === Number(categoryId));
+  }
+
+  else if (categoryId === 1) {
+    filterProducts = products
   }
 
   res
