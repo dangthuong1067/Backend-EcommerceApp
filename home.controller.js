@@ -9,15 +9,13 @@ exports.getProducts = (req, res) => {
     filterProducts = products.filter(item => {
       return item?.tags?.includes(tag);
     })
-
-    // filterProducts = products.filter(item => item.tags?.includes(tag))
   }
 
-  else if (categoryId && categoryId !== 1) {
+  else if (categoryId) {
     filterProducts = products.filter(item => item.categoryId === Number(categoryId));
   }
 
-  else if (categoryId === 1) {
+  else if (!tag && !categoryId) {
     filterProducts = products
   }
 
