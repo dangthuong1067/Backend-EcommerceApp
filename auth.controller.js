@@ -20,15 +20,19 @@ exports.signup = (req, res) => {
     confirmPassword,
     role
   }
-  console.log('users', users);
-  users.forEach(item => {
-    if (item.username === user.username || item.email === user.email) {
-      return
-    } else {
-      users.push(user);
-    }
-  });
 
+  const findDuplicateUsername = users.find(item => item.email === user.email);
+
+  if (findDuplicateUsername) {
+    return res
+      .status(422)
+      .json({
+        status: "fail",
+        message: "Duplicate Email. Please try again"
+      })
+  } else {
+    users.push(user);
+  }
 
   res
     .status(201)
@@ -39,13 +43,12 @@ exports.signup = (req, res) => {
 
 exports.login = (req, res) => {
   const {
-    // username,
     email,
     password,
   } = req.body;
 
   const user = users.find(
-    item => item.username === username && item.password === password
+    item => item.email === email && item.password === password
   );
 
   if (!user) {

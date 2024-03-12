@@ -2,23 +2,24 @@ const { products } = require('./data');
 const nextId = require('./helpers/nextId');
 
 exports.getProducts = (req, res) => {
-  const {
-    name,
-  } = req.query;
-  let filterProducts = products;
+  // const {
+  //   name,
+  // } = req.query;
+  // let filterProducts = products;
 
-  if (name) {
-    filterProducts = filterProducts.filter(
-      item => item.name.toLowerCase().includes(name.toLowerCase())
-    );
-  }
+  // if (name) {
+  //   filterProducts = filterProducts.filter(
+  //     item => item.name.toLowerCase().includes(name.toLowerCase())
+  //   );
+  // }
 
   res
     .status(200)
     .json({
       status: 'success',
       data: {
-        products: filterProducts
+        //products: filterProducts
+        products
       }
     });
 };
