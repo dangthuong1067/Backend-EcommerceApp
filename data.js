@@ -757,5 +757,35 @@ exports.categories = [
     categoryName: 'OPPO',
     image: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(3).png",
     background: '#b0b7bd',
+  },
+  {
+    id: 6,
+    categoryName: 'REALME',
+    image: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/samsung-logo-transparent.png",
+    background: '#bac5c1',
+  },
+  {
+    id: 7,
+    categoryName: 'HONOR',
+    image: "https://w7.pngwing.com/pngs/664/673/png-transparent-apple-logo-iphone-computer-apple-logo-company-heart-logo.png",
+    background: '#fdf6ec',
+  },
+  {
+    id: 8,
+    categoryName: 'NOKIA',
+    image: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/11/30/vivo-logo.png",
+    background: '#fde8e5',
+  },
+  {
+    id: 9,
+    categoryName: 'MOBELL',
+    image: "https://cdn.hoanghamobile.com/i/cat/Uploads/2023/07/18/xiaomi-logo.png",
+    background: '#f4eaf5',
+  },
+  {
+    id: 5,
+    categoryName: 'ITEL',
+    image: "https://cdn.hoanghamobile.com/i/cat/Uploads/2020/09/14/brand%20(3).png",
+    background: '#b0b7bd',
   }
 ]

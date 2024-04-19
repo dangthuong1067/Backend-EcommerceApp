@@ -47,7 +47,7 @@ exports.getCategories = (req, res) => {
     .json({
       status: 'success',
       data: {
-        categories
+        categories: categories.slice(0,5)
       }
     });
 };
