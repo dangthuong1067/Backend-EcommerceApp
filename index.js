@@ -9,6 +9,8 @@ const app = express();
 const productController = require('./product.controller');
 const authController = require('./auth.controller');
 const userController = require('./user.controller');
+const homeController = require('./home.controller');
+const categoriesController = require('./categories.controller');
 const authenticateJWT = require('./middlewares/authenticateJWT');
 
 const port = 3100;
@@ -25,7 +27,16 @@ app.post('/auth/forget-password')
 app.post('/auth/signup', authController.signup);
 app.post('/auth/login', authController.login);
 
+
+
 app.use(authenticateJWT);
+
+app.get('/home/banners', homeController.getBanners);
+app.get('/home/categories', homeController.getCategories);
+app.get('/categoris/getCategoriesList', categoriesController.getCategories);
+app
+  .route('/home/products')
+  .get(homeController.getProducts)
 
 app.get('/users/me', userController.getMe);
 
