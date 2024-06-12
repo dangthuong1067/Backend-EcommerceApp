@@ -155,10 +155,47 @@ exports.products = [
     name: 'iPhone 12',
     categoryId: 2,
     tags: ['sale', 'popular'],
+    imageSliders:[
+      {
+        idImageSlider: 1,
+        imageUrl: "https://cdn.tgdd.vn/Products/Images/42/228737/iphone-12-den-new-600x600-600x600.jpg",
+       
+      },
+      {
+        idImageSlider: 2,
+        imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-12-128gb_2.png",
+        
+      },
+      {
+        idImageSlider: 3,
+        imageUrl: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/1/_/1_251_1.jpg",
+       
+      },
+      {
+        idImageSlider: 4,
+        imageUrl: "https://cdn.tgdd.vn/Products/Images/42/228737/iphone-12-den-new-600x600-600x600.jpg",
+       
+      }
+    ],
     items: [
-      { capacity: "64 GB", image: "https://cdn.tgdd.vn/Products/Images/42/228737/iphone-12-den-new-600x600-600x600.jpg", price: 14890000, reducedPrice: 13190000, },
-      { capacity: "128 GB", image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-12-128gb_2.png", price: 15590000, reducedPrice: 15000000, },
-      { capacity: "256 GB", image: "https://cdn.tgdd.vn/Products/Images/42/228737/iphone-12-den-new-600x600-600x600.jpg", price: 19990000, reducedPrice: 18190000, },
+      {
+        capacity: "64 GB", image: "https://cdn.tgdd.vn/Products/Images/42/228737/iphone-12-den-new-600x600-600x600.jpg", price: 14890000, reducedPrice: 13190000,
+        colors: [
+          'Trắng', 'Xanh lá', 'Đen', 'Tím', 'Xanh Dương', 'Đỏ'
+        ]
+      },
+      {
+        capacity: "128 GB", image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-12-128gb_2.png", price: 15590000, reducedPrice: 15000000,
+        colors: [
+          'Trắng', 'Xanh lá', 'Đen', 'Tím', 'Xanh Dương', 'Đỏ'
+        ]
+      },
+      {
+        capacity: "256 GB", image: "https://cdn.tgdd.vn/Products/Images/42/228737/iphone-12-den-new-600x600-600x600.jpg", price: 19990000, reducedPrice: 18190000,
+        colors: [
+          'Trắng', 'Xanh lá', 'Đen', 'Tím', 'Xanh Dương', 'Đỏ'
+        ]
+      },
     ]
   },
   {
