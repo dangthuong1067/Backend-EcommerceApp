@@ -284,12 +284,12 @@ exports.products = [
     items: [
       {
         capacity: "64 GB", image: "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/10/18/iphone-11-black-2-up-vertical-us-en-screen-1.png", price: 11790000, reducedPrice: 10790000,
-        colors: ['Đen', 'Trắng', 'Xanh Lá', 'Vàng', 'Tím', 'Đỏ']
+        colors: [{ color: 'Đen', price: 10790000 },{ color: 'Trắng', price: 8490000 }, { color: 'Xanh lá', price: 8790000},{ color: 'Vàng', price: 8790000 },{ color: 'Tím', price: 8790000 }, { color: 'Đỏ', price: 8790000}]
 
       },
       {
         capacity: "128 GB", image: "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/10/18/iphone-11-black-2-up-vertical-us-en-screen-1.png", price: 13390000, reducedPrice: 12290000,
-        colors: ['Đen', 'Trắng', 'Xanh Lá', 'Vàng', 'Tím', 'Đỏ']
+        colors: [{ color: 'Đen', price: 13390000 },{ color: 'Trắng', price: 9790000 }, { color: 'Xanh lá', price: 10090000},{ color: 'Vàng', price: 10090000 },{ color: 'Tím', price: 10090000 }, { color: 'Đỏ', price: 10090000}]
       },
 
     ]
