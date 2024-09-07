@@ -71,6 +71,7 @@ exports.login = (req, res) => {
       status: 'success',
       data: {
         token,
+        user
       }
     });
 }

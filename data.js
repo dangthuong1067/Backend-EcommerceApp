@@ -17,7 +17,8 @@ exports.products = [
         capacity: "6GB", image: "https://cdn.tgdd.vn/Products/Images/42/271721/samsung-galaxy-a14-5g-thumb-nau-600x600.jpg", price: 4990000, reducedPrice: 3990000,
         colors: [{ color: 'Đen', price: 3990000 }, { color: 'Bạc', price: 4000000 }]
       }
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 2,
@@ -37,7 +38,8 @@ exports.products = [
         capacity: "256GB", image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-a15-xanh-01.png", price: 5590000, reducedPrice: 4990000,
         colors: [{ color: 'Xanh', price: 4990000 }]
       }
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 3,
@@ -56,7 +58,8 @@ exports.products = [
         capacity: "8GB - 256GB", image: "https://cdn.tgdd.vn/Products/Images/42/267211/Samsung-Galaxy-S21-FE-vang-1-2-600x600.jpg", price: 18990000, reducedPrice: 10990000,
         colors: [{ color: 'Vàng', price: 10990000 }, { color: 'Xanh', price: 10990000 }]
       }
-    ]
+    ],
+     lovedByUserId: []
   },
   {
     id: 4,
@@ -81,7 +84,8 @@ exports.products = [
           { color: 'Vàng', price: 40790000 }
         ]
       }
-    ]
+    ],
+     lovedByUserId: []
   },
   {
     id: 5,
@@ -110,7 +114,8 @@ exports.products = [
           { color: 'Xanh', price: 21890000 }
         ]
       }
-    ]
+    ],
+     lovedByUserId: []
   },
   {
     id: 6,
@@ -137,7 +142,8 @@ exports.products = [
           { color: 'Xanh', price: 29000000 }
         ]
       }
-    ]
+    ],
+     lovedByUserId: []
   },
   {
     id: 7,
@@ -157,7 +163,8 @@ exports.products = [
           { color: 'Xanh', price: 13390000 }
         ]
       },
-    ]
+    ],
+     lovedByUserId: []
   },
   {
     id: 8,
@@ -175,7 +182,8 @@ exports.products = [
           { color: 'Xanh', price: 16990000 }
         ]
       },
-    ]
+    ],
+     lovedByUserId: []
   },
   {
     id: 9,
@@ -193,7 +201,8 @@ exports.products = [
           { color: 'Xanh', price: 3650000 }
         ]
       },
-    ]
+    ],
+     lovedByUserId: []
   },
   {
     id: 10,
@@ -219,7 +228,8 @@ exports.products = [
           { color: 'Xanh', price: 9190000 }
         ]
       },
-    ]
+    ],
+     lovedByUserId: []
   },
   {
     id: 11,
@@ -239,7 +249,8 @@ exports.products = [
         capacity: "256 GB", image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-a54.png", price: 11490000, reducedPrice: 9790000,
         colors: [{ color: 'Đen', price: 9790000 }, { color: 'Xanh', price: 9790000 }]
       },
-    ]
+    ],
+     lovedByUserId: []
   },
   {
     id: 12,
@@ -255,7 +266,8 @@ exports.products = [
         capacity: "128 GB", image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-a05sl.png", price: 3990000, reducedPrice: 3590000,
         colors: [{ color: 'Đen', price: 3590000 }]
       },
-    ]
+    ],
+     lovedByUserId: []
   },
   {
     id: 13,
@@ -271,7 +283,8 @@ exports.products = [
         capacity: "128 GB", image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-a05.png", price: 3090000, reducedPrice: 3000000,
         colors: [{ color: 'Đen', price: 3000000 }]
       },
-    ]
+    ],
+     lovedByUserId: []
   },
   {
     id: 14,
@@ -291,7 +304,8 @@ exports.products = [
         capacity: "256 GB", image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-z-fold-5.png", price: 46000000, reducedPrice: 39000000,
         colors: [{ color: 'Đen', price: 39000000 }]
       },
-    ]
+    ],
+     lovedByUserId: []
   },
   {
     id: 15,
@@ -310,7 +324,8 @@ exports.products = [
           { color: 'Đen', price: 6090000 }
         ]
       },
-    ]
+    ],
+     lovedByUserId: []
   },
 
   {
@@ -334,7 +349,9 @@ exports.products = [
         colors: [{ color: 'Đen', price: 13390000 }, { color: 'Trắng', price: 9790000 }, { color: 'Xanh lá', price: 10090000 }, { color: 'Vàng', price: 10090000 }, { color: 'Tím', price: 10090000 }, { color: 'Đỏ', price: 10090000 }]
       },
 
-    ]
+    ],
+    lovedByUserId: []
+
   },
 
   {
@@ -398,7 +415,8 @@ exports.products = [
           { color: 'Đỏ', price: 18190000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 18,
@@ -420,7 +438,8 @@ exports.products = [
           { color: 'Đỏ', price: 16490000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 19,
@@ -442,7 +461,8 @@ exports.products = [
           { color: 'Xanh Lá', price: 18990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 20,
@@ -466,7 +486,8 @@ exports.products = [
           { color: 'Tím', price: 21990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 21,
@@ -506,7 +527,8 @@ exports.products = [
           { color: 'Titan', price: 46990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 22,
@@ -554,7 +576,8 @@ exports.products = [
           { color: 'Đen', price: 41990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 23,
@@ -596,7 +619,8 @@ exports.products = [
           { color: 'Vàng', price: 33490000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 24,
@@ -622,7 +646,8 @@ exports.products = [
         ]
       },
 
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 25,
@@ -670,7 +695,8 @@ exports.products = [
           { color: 'Titan', price: 40490000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 26,
@@ -712,7 +738,8 @@ exports.products = [
           { color: 'Đỏ', price: 33490000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 27,
@@ -732,7 +759,8 @@ exports.products = [
           { color: 'Graphite', price: 24990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 28,
@@ -755,7 +783,8 @@ exports.products = [
         ]
       },
       { capacity: "256 GB", image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/2/_/2_61_8_2_1_4_1_1.jpg", price: 31990000, reducedPrice: 30990000, },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 29,
@@ -775,7 +804,8 @@ exports.products = [
           { color: 'Graphite', price: 21990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 30,
@@ -817,7 +847,8 @@ exports.products = [
           { color: 'Đỏ', price: 17990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
 
   {
@@ -836,7 +867,8 @@ exports.products = [
           { color: 'Đỏ', price: 300000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 32,
@@ -865,7 +897,8 @@ exports.products = [
           { color: 'Vàng', price: 500000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 33,
@@ -884,7 +917,8 @@ exports.products = [
           { color: 'Đen', price: 500000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 34,
@@ -902,7 +936,8 @@ exports.products = [
           { color: 'Vàng', price: 600000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 35,
@@ -920,7 +955,8 @@ exports.products = [
           { color: 'Đỏ', price: 700000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 36,
@@ -939,7 +975,8 @@ exports.products = [
           { color: 'Xanh', price: 7990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 37,
@@ -965,7 +1002,8 @@ exports.products = [
           { color: 'Vàng', price: 6190000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 38,
@@ -995,7 +1033,8 @@ exports.products = [
           { color: 'Vàng', price: 3790000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 39,
@@ -1012,7 +1051,8 @@ exports.products = [
           { color: 'Đen', price: 3490000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 40,
@@ -1031,7 +1071,8 @@ exports.products = [
           { color: 'Đen', price: 2490000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 41,
@@ -1050,7 +1091,8 @@ exports.products = [
           { color: 'Đen', price: 6990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 42,
@@ -1069,7 +1111,8 @@ exports.products = [
           { color: 'Xanh', price: 2690000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 43,
@@ -1088,7 +1131,8 @@ exports.products = [
           { color: 'Xanh', price: 3890000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 44,
@@ -1107,7 +1151,8 @@ exports.products = [
           { color: 'Xanh', price: 2390000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 45,
@@ -1126,7 +1171,8 @@ exports.products = [
           { color: 'Xanh', price: 7250000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 46,
@@ -1145,7 +1191,8 @@ exports.products = [
           { color: 'Xanh', price: 300000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 47,
@@ -1164,7 +1211,8 @@ exports.products = [
           { color: 'Xanh', price: 400000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 48,
@@ -1183,7 +1231,8 @@ exports.products = [
           { color: 'Xanh', price: 500000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 49,
@@ -1202,7 +1251,8 @@ exports.products = [
           { color: 'Xanh', price: 600000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 50,
@@ -1221,7 +1271,8 @@ exports.products = [
           { color: 'Xanh', price: 700000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 51,
@@ -1240,7 +1291,8 @@ exports.products = [
           { color: 'Xanh', price: 3190000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 52,
@@ -1258,7 +1310,8 @@ exports.products = [
           { color: 'Xanh', price: 11490000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 53,
@@ -1277,7 +1330,8 @@ exports.products = [
           { color: 'Xanh', price: 7990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 54,
@@ -1296,7 +1350,8 @@ exports.products = [
           { color: 'Trắng', price: 18090000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 55,
@@ -1315,7 +1370,8 @@ exports.products = [
           { color: 'Xanh', price: 6790000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 56,
@@ -1333,7 +1389,8 @@ exports.products = [
           { color: 'Xanh', price: 5490000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 57,
@@ -1352,7 +1409,8 @@ exports.products = [
           { color: 'Tím', price: 8990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 58,
@@ -1371,7 +1429,8 @@ exports.products = [
           { color: 'Tím', price: 6050000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 59,
@@ -1390,7 +1449,8 @@ exports.products = [
           { color: 'Đen', price: 2490000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 60,
@@ -1408,7 +1468,8 @@ exports.products = [
           { color: 'Trắng', price: 6090000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 61,
@@ -1427,7 +1488,8 @@ exports.products = [
           { color: 'Vàng', price: 300000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 62,
@@ -1446,7 +1508,8 @@ exports.products = [
           { color: 'Xanh', price: 400000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 63,
@@ -1464,7 +1527,8 @@ exports.products = [
           { color: 'Xanh', price: 500000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 64,
@@ -1483,7 +1547,8 @@ exports.products = [
           { color: 'Xanh', price: 600000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 65,
@@ -1509,7 +1574,8 @@ exports.products = [
           { color: 'Đen', price: 3990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 66,
@@ -1528,7 +1594,8 @@ exports.products = [
         ]
 
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 67,
@@ -1547,7 +1614,8 @@ exports.products = [
           { color: 'Xanh', price: 18990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 68,
@@ -1565,7 +1633,8 @@ exports.products = [
           { color: 'Xanh', price: 6990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 69,
@@ -1583,7 +1652,8 @@ exports.products = [
           { color: 'Tím', price: 6000000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 70,
@@ -1602,7 +1672,8 @@ exports.products = [
           { color: 'Bạc', price: 7790000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 71,
@@ -1621,7 +1692,8 @@ exports.products = [
           { color: 'Vàng', price: 5190000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 72,
@@ -1640,7 +1712,8 @@ exports.products = [
           { color: 'Đen', price: 2990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 73,
@@ -1660,7 +1733,8 @@ exports.products = [
         ]
 
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 74,
@@ -1679,7 +1753,8 @@ exports.products = [
           { color: 'Vàng', price: 6990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
   {
     id: 75,
@@ -1704,7 +1779,8 @@ exports.products = [
           { color: 'Cam', price: 9990000 }
         ]
       },
-    ]
+    ],
+    lovedByUserId: []
   },
 
 ];
@@ -1714,6 +1790,27 @@ exports.users = [
     id: 1,
     username: 'admin',
     email: 'thuong@gmail.com',
+    password: '123456',
+    confirmPassword: '123456',
+  },
+  {
+    id: 2,
+    username: 'thuan',
+    email: 'thuan@gmail.com',
+    password: '123456',
+    confirmPassword: '123456',
+  },
+  {
+    id: 4,
+    username: 'thao',
+    email: 'thao@gmail.com',
+    password: '123456',
+    confirmPassword: '123456',
+  },
+  {
+    id: 7,
+    username: 'linh',
+    email: 'linh@gmail.com',
     password: '123456',
     confirmPassword: '123456',
   }
