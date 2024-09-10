@@ -103,8 +103,8 @@ exports.updateProduct = (req, res) => {
 }
 
 exports.updateLoveProductList = (req, res) => {
+  const { userId } = req;
   const {
-    userId,
     productId
   } = req.body;
 
