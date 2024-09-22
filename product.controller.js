@@ -1,4 +1,4 @@
-const { products } = require('./data');
+const { products, cartList } = require('./data');
 const nextId = require('./helpers/nextId');
 
 exports.getProducts = (req, res) => {
@@ -132,5 +132,56 @@ exports.updateLoveProductList = (req, res) => {
     .status(404)
     .json({
       status: 'fail',
+    });
+}
+
+exports.addCart = (req, res) => {
+  const {
+    productId,
+    quantity
+  } = req.body;
+
+  const product = products.find(item => item.id === Number(productId));
+
+  const isProductInCart = cartList.some(item => item.id === productId)
+
+  if (isProductInCart) {
+    product.quantity = quantity
+  } else {
+    product.quantity = quantity
+    cartList.push(product)
+  }
+
+  return res
+    .status(200)
+    .json({
+      status: 'success',
+      cartList
+    });
+}
+
+exports.getCartList = (req, res) => {
+  res
+    .status(200)
+    .json({
+      status: 'success',
+      data: {
+        cartList
+      }
+    });
+};
+
+
+exports.removeCart = (req, res) => {
+  const {
+    productId,
+  } = req.body;
+  const newCartList = cartList.filter(item => item.id !== Number(productId));
+
+  return res
+    .status(200)
+    .json({
+      status: 'success',
+      cartList: newCartList
     });
 }

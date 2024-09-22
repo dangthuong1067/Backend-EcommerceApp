@@ -1897,3 +1897,7 @@ exports.categories = [
     background: '#b0b7bd',
   }
 ]
+
+exports.cartList = [
+ 
+];
