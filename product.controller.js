@@ -1,4 +1,4 @@
-const { products, cartList } = require('./data');
+const { products, cartList, users } = require('./data');
 const nextId = require('./helpers/nextId');
 
 exports.getProducts = (req, res) => {
@@ -136,27 +136,37 @@ exports.updateLoveProductList = (req, res) => {
 }
 
 exports.addCart = (req, res) => {
+  const { userId } = req;
   const {
     productId,
-    quantity
+    quantity,
+    image
   } = req.body;
 
-  const product = products.find(item => item.id === Number(productId));
+  const cartListInUsers = users.find(item => item.id === userId).cartList
+  const target = cartListInUsers.find(item => item.id === productId)
 
-  const isProductInCart = cartList.some(item => item.id === productId)
-
-  if (isProductInCart) {
-    product.quantity = quantity
+  let product
+  if (target) {
+    target.quantity = quantity
+    product = target
   } else {
-    product.quantity = quantity
-    cartList.push(product)
+    const productFound = products.find(item => item.id === Number(productId));
+    let cartItem = {
+      id: productFound.id,
+      name: productFound.name,
+      quantity,
+      image
+    }
+    cartListInUsers.push(cartItem)
+    product = cartItem
   }
 
   return res
     .status(200)
     .json({
       status: 'success',
-      cartList
+      product
     });
 }
 
@@ -173,15 +183,21 @@ exports.getCartList = (req, res) => {
 
 
 exports.removeCart = (req, res) => {
+  const { userId } = req;
   const {
     productId,
   } = req.body;
-  const newCartList = cartList.filter(item => item.id !== Number(productId));
+  const cartListInUsers = users.find(item => item.id === userId).cartList
+
+  cartListInUsers.forEach((item, index) => {
+    console.log('item day nha', item);
+    if (item.id === Number(productId)) cartListInUsers.splice(index, 1);
+  });
+
 
   return res
     .status(200)
     .json({
       status: 'success',
-      cartList: newCartList
     });
 }

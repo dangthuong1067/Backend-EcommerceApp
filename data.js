@@ -1792,6 +1792,7 @@ exports.users = [
     email: 'thuong@gmail.com',
     password: '123456',
     confirmPassword: '123456',
+    cartList:[]
   },
   {
     id: 2,
@@ -1799,6 +1800,7 @@ exports.users = [
     email: 'thuan@gmail.com',
     password: '123456',
     confirmPassword: '123456',
+    cartList:[]
   },
   {
     id: 4,
@@ -1806,6 +1808,7 @@ exports.users = [
     email: 'thao@gmail.com',
     password: '123456',
     confirmPassword: '123456',
+    cartList:[]
   },
   {
     id: 7,
@@ -1813,6 +1816,7 @@ exports.users = [
     email: 'linh@gmail.com',
     password: '123456',
     confirmPassword: '123456',
+    cartList:[]
   }
 ];
 
@@ -1897,7 +1901,3 @@ exports.categories = [
     background: '#b0b7bd',
   }
 ]
-
-exports.cartList = [
- 
-];
