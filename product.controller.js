@@ -190,7 +190,6 @@ exports.removeCart = (req, res) => {
   const cartListInUsers = users.find(item => item.id === userId).cartList
 
   cartListInUsers.forEach((item, index) => {
-    console.log('item day nha', item);
     if (item.id === Number(productId)) cartListInUsers.splice(index, 1);
   });
 
