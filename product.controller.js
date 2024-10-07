@@ -170,18 +170,6 @@ exports.addCart = (req, res) => {
     });
 }
 
-exports.getCartList = (req, res) => {
-  res
-    .status(200)
-    .json({
-      status: 'success',
-      data: {
-        cartList
-      }
-    });
-};
-
-
 exports.removeCart = (req, res) => {
   const { userId } = req;
   const {
