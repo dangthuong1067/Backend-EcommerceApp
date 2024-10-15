@@ -140,7 +140,10 @@ exports.addCart = (req, res) => {
   const {
     productId,
     quantity,
-    image
+    image,
+    capacity,
+    color,
+    price
   } = req.body;
 
   const cartListInUsers = users.find(item => item.id === userId).cartList
@@ -156,7 +159,10 @@ exports.addCart = (req, res) => {
       id: productFound.id,
       name: productFound.name,
       quantity,
-      image
+      image,
+      capacity,
+      color,
+      price
     }
     cartListInUsers.push(cartItem)
     product = cartItem
