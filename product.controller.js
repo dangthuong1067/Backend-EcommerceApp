@@ -194,3 +194,15 @@ exports.removeCart = (req, res) => {
       status: 'success',
     });
 }
+
+exports.getCartList = (req, res) => {
+  const { userId } = req;
+  const cartListInUsers = users.find(item => item.id === userId).cartList
+  
+  return res
+    .status(200)
+    .json({
+      status: 'success',
+      cartList: cartListInUsers
+    });
+}

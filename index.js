@@ -43,6 +43,7 @@ app.get('/users/me', userController.getMe);
 app.post('/products/updateLoveProductList', productController.updateLoveProductList);
 app.post('/cart/addCart', productController.addCart);
 app.post('/cart/removeCart', productController.removeCart);
+app.get('/cart/getCartList', productController.getCartList);
 app
   .route('/products')
   .get(productController.getProducts)
