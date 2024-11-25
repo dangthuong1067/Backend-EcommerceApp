@@ -180,18 +180,44 @@ exports.removeCart = (req, res) => {
   const { userId } = req;
   const {
     productId,
+
   } = req.body;
+  
   const cartListInUsers = users.find(item => item.id === userId).cartList
+  const target = cartListInUsers.find(item => item.id === productId)
+  const index = cartListInUsers.findIndex(item => item.id === productId);
 
-  cartListInUsers.forEach((item, index) => {
-    if (item.id === Number(productId)) cartListInUsers.splice(index, 1);
-  });
-
+  if (index !== -1) {
+    cartListInUsers.splice(index, 1);
+  }
 
   return res
     .status(200)
     .json({
       status: 'success',
+      product: target,
+      cartList: cartListInUsers 
+    });
+}
+
+
+exports.saveCheckStatus = (req, res) => {
+  const { userId } = req;
+  const {
+    productId,
+    checkStatus
+  } = req.body;
+
+  const cartListInUsers = users.find(item => item.id === userId).cartList
+  const target = cartListInUsers.find(item => item.id === productId)
+
+  target.check=checkStatus
+
+  return res
+    .status(200)
+    .json({
+      status: 'success',
+      cartList: cartListInUsers 
     });
 }
 
