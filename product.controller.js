@@ -211,13 +211,33 @@ exports.saveCheckStatus = (req, res) => {
   const cartListInUsers = users.find(item => item.id === userId).cartList
   const target = cartListInUsers.find(item => item.id === productId)
 
-  target.check=checkStatus
+  target.check = checkStatus
 
   return res
     .status(200)
     .json({
       status: 'success',
-      cartList: cartListInUsers 
+      cartList: cartListInUsers
+    });
+}
+
+exports.saveQuantity = (req, res) => {
+  const { userId } = req;
+  const {
+    productId,
+    quantity
+  } = req.body;
+
+  const cartListInUsers = users.find(item => item.id === userId).cartList
+  const target = cartListInUsers.find(item => item.id === productId)
+
+  target.quantity = quantity
+
+  return res
+    .status(200)
+    .json({
+      status: 'success',
+      cartList: cartListInUsers
     });
 }
 

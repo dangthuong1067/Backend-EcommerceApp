@@ -44,6 +44,7 @@ app.post('/products/updateLoveProductList', productController.updateLoveProductL
 app.post('/cart/addCart', productController.addCart);
 app.post('/cart/removeCart', productController.removeCart);
 app.post('/cart/saveCheckStatus', productController.saveCheckStatus);
+app.post('/cart/saveQuantity', productController.saveQuantity);
 app.get('/cart/getCartList', productController.getCartList);
 app
   .route('/products')
